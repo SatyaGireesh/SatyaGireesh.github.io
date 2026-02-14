@@ -25,12 +25,12 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap;
 }
 
+/* LEFT SIDE */
+
 .left {
-    width: 50%;
-    min-width: 300px;
+    width: 55%;
 }
 
 .left h1 {
@@ -50,6 +50,8 @@ body {
     color: #ddd;
     max-width: 500px;
 }
+
+/* BUTTONS */
 
 .buttons {
     margin-bottom: 30px;
@@ -83,10 +85,11 @@ body {
     color: black;
 }
 
+/* STATS */
+
 .stats {
     display: flex;
     gap: 40px;
-    flex-wrap: wrap;
 }
 
 .stats h3 {
@@ -99,16 +102,18 @@ body {
     color: #ccc;
 }
 
+/* RIGHT SIDE IMAGE */
+
 .right {
-    width: 40%;
-    min-width: 250px;
-    text-align: center;
+    width: 45%;
+    display: flex;
+    justify-content: center;
 }
 
 .right img {
-    width: 300px;
+    width: 320px;
     border-radius: 50%;
-    box-shadow: 0 0 50px #a855f7;
+    box-shadow: 0 0 60px #a855f7;
 }
 
 /* PROJECT SECTION */
@@ -151,4 +156,26 @@ body {
 .project-card p {
     color: #ccc;
     font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 40px;
+    }
+
+    .stats {
+        justify-content: center;
+        margin-top: 30px;
+    }
 }
