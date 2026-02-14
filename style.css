@@ -119,56 +119,16 @@ body {
     box-shadow: 0 0 60px #a855f7;
 }
 
-/* PROJECT SECTION */
+/* PROJECTS & SKILLS SECTION */
 
-.projects {
-    padding: 100px 8%;
-    background: #111;
-}
-
-.projects h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 60px;
-    color: #c084fc;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.project-card {
-    background: #1a1a1a;
-    padding: 30px;
-    border-radius: 15px;
-    transition: 0.3s ease;
-}
-
-.project-card h3 {
-    margin-bottom: 15px;
-    color: #ffffff;
-}
-
-.project-card p {
-    color: #ccc;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 25px #a855f7;
-}
-
-/* SKILLS SECTION */
-
+.projects,
 .skills {
     padding: 100px 8%;
-    background: #0e0e0e;
+    background: #111;
+    border-top: 1px solid #1f1f1f;
 }
 
+.projects h2,
 .skills h2 {
     text-align: center;
     font-size: 36px;
@@ -176,12 +136,18 @@ body {
     color: #c084fc;
 }
 
+/* GRID LAYOUT */
+
+.project-grid,
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
+/* CARDS */
+
+.project-card,
 .skill-card {
     background: #1a1a1a;
     padding: 30px;
@@ -189,22 +155,24 @@ body {
     transition: 0.3s ease;
 }
 
+.project-card h3,
 .skill-card h3 {
     margin-bottom: 15px;
     color: #ffffff;
 }
 
+.project-card p,
 .skill-card p {
     color: #ccc;
     font-size: 14px;
     line-height: 1.6;
 }
 
+.project-card:hover,
 .skill-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 25px #a855f7;
 }
-
 
 /* MOBILE RESPONSIVE */
 
